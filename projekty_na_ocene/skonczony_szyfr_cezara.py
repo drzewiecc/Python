@@ -31,12 +31,20 @@ while petla=="tak":
 
     if dzialanie=="zakodowac":
         for litera in slowo:
-            nowa = alfabet[litera]+przesuniecie
-            ostateczne_slowo.append(alfabet_odwrocony[nowa])
+            if alfabet[litera]+przesuniecie <=26:
+                nowa = alfabet[litera]+przesuniecie
+                ostateczne_slowo.append(alfabet_odwrocony[nowa])
+            else:
+                nowa = alfabet[litera]+przesuniecie-26
+                ostateczne_slowo.append(alfabet_odwrocony[nowa])        
     else:
         for litera in slowo:
-            nowa = alfabet[litera]-przesuniecie
-            ostateczne_slowo.append(alfabet_odwrocony[nowa])
+            if alfabet[litera]-przesuniecie > 0:
+                nowa = alfabet[litera]-przesuniecie
+                ostateczne_slowo.append(alfabet_odwrocony[nowa])
+            else:
+                nowa = 26-(0-(alfabet[litera]-przesuniecie))
+                ostateczne_slowo.append(alfabet_odwrocony[nowa])
 
     print(ostateczne_slowo)
     petla=input("Jeszcze raz? (tak/nie) ")
@@ -44,4 +52,3 @@ while petla=="tak":
         if petla!="nie":
             petla=input("Nie obsluguje takiej komendy. \nJeszcze raz? (tak/nie) ")
 
-#DOPISZ ZEBY WRACALO GDY LICZBA PRZEKRACZA ALFABET, NP. PTZY DUZYM PRZESUNIECIU
