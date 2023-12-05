@@ -44,7 +44,7 @@ while petla=="tak":
                             zmienna = zmienna-26
                         ostateczne_slowo.append(alfabet_odwrocony[zmienna])
 
-    else:
+    elif dzialanie=="odkodowac":
         for litera in slowo:
             if alfabet[litera]-przesuniecie > 0:
                 nowa = alfabet[litera]-przesuniecie
@@ -54,6 +54,8 @@ while petla=="tak":
                 while not zmienna > 0:
                     zmienna = 26+alfabet[litera]-przesuniecie
                 ostateczne_slowo.append(alfabet_odwrocony[zmienna])
+    else:
+        print("Blad")
             
 
     print(ostateczne_slowo)

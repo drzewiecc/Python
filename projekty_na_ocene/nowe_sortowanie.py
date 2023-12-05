@@ -21,23 +21,14 @@ else:
         dlugosc=dlugosc-1
      print(lista)
 
-wybor = input("Chcesz znalezc najmniejsza czy najwieksza wartosc? (min/maks): ")
-while wybor!="min" and wybor!="maks":
-        wybor = input("Nie obsluguje takiej komendy. \nWybierz jeszcze raz: ")
-
-if wybor=="min":
-     for i,j in lista:
-        if lista[i] > lista[j]:
-            lista.remove[i]
-        else:
-            lista.remove[j]
-     print("Minimalna wartoscia na liscie jest ", lista[1])
-else:
-     for i,j in lista:
-          if lista[i] > lista[j]:
-               lista.remove[j]
-          else:
-               lista.remove[i]
-     print("Maksymalna wartoscia na liscie jest ", lista[1])
-
-#NIE DZIALAJA ELEMENTY, NAPRAW
+for i in lista:
+    for j in lista:
+         a=i
+         b=j
+         if i>j:
+              lista[j]=a
+              lista[i]=b
+         else:
+              lista[j]=b
+              lista[i]=a
+print(lista)
