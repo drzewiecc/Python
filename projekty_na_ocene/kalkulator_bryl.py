@@ -50,7 +50,7 @@ def gra():
         sprawdzenie(h)
         print("Objetosc tego graniastoslupa wynosi ", p*h, ".")
 
-while grac=="tak":
+while grac=="tak": 
     gra()
     grac=input("Jeszcze raz? (tak/nie) ")
     while grac!="tak" and grac!="nie":

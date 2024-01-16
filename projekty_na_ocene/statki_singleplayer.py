@@ -9,4 +9,15 @@ rzad8=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 rzad9=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 rzad10=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
+#orientacja ---> poziom-1, pion-2
 import random
+
+# losowanie czworki
+orientacja=random.randint(1,2)
+if orientacja==1:
+    #tu rzedy
+    rzad=random.randint(1,10)
+    miejsce=random.randint(1,10)
+    
+else:
+    #tu kolumny

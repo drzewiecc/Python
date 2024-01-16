@@ -1,4 +1,3 @@
-import math
-
-print(math.sqrt(4))
-print("Hello world ")
+import random
+a=random.randint(1,10)
+print(a)
